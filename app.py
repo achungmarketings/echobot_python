@@ -51,7 +51,7 @@ def callback():
 ##### 基本上程式編輯都在這個function #####
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text='我是Python,' + event.message.text)
+    message = TextSendMessage(text="我是Python," + event.message.text)
     line_bot_api.reply_message(event.reply_token,message)
 
 #主程式
